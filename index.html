@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FindMe</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Importing scripts for carousels and css packages for icons and fonts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/bb340fd883.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section id="title" class="colored-section">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#">findme</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mainNavToggler"
+            aria-controls="mainNavToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNavToggler">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cta">Download</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+              <!--<li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>-->
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+          </div>
+        </nav>
+
+        <!-- Title -->
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="big-heading">Keep track of your prized possessions.</h1>
+            <button type="button" class="download-button btn btn-lg btn-dark">
+              <i class="fab fa-apple"></i> Download
+            </button>
+            <button
+              type="button"
+              class="download-button btn btn-lg btn-outline-light"
+            >
+              <i class="fab fa-google-play"></i> Download
+            </button>
+          </div>
+
+          <div class="col-lg-6">
+            <img
+              class="title-image"
+              src="images/pin_iphonexspacegrey_portrait.png"
+              alt="iphone-mockup"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="white-section">
+      <div class="container-fluid">
+        <div class="features-row row">
+          <div class="col-lg-4">
+            <i class="feature-buttons fas fa-check-circle fa-5x"></i>
+            <h3 class="feature-separator">Easy to use.</h3>
+            <p>
+              So easy to use, anyone can find what they're missing in their
+              life.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <i class="feature-buttons fas fa-bullseye fa-5x"></i>
+            <h3 class="feature-separator">The Best Cybersleuths</h3>
+            <p>
+              We have the best team on staff to help you find what you're
+              looking for.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <i class="feature-buttons fas fa-search-location fa-5x"></i>
+            <h3 class="feature-separator">Guaranteed to work.</h3>
+            <p>Find exactly what you're looking for, or your money back.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <section id="testimonials" class="colored-section">
+      <div
+        id="testimonial-carousel"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="container-fluid carousel-img carousel-item active">
+            <h2 class="testimonial-text">
+              I'm Chatters, the cybersleuth. With the paid plans, you have
+              access to me 24/7 so that I can give you advice at any time of
+              day, so you can look for your lost item!
+            </h2>
+            <img
+              class="testimonial-img"
+              src="images/bot.png"
+              alt="chatters-profile"
+            />
+            <em>Chatters, Private Eye</em>
+          </div>
+          <div class="container-fluid carousel-img carousel-item">
+            <h2 class="testimonial-text">
+              I lost a precious heirloom a few weeks ago. With the help of this
+              service, I was able to find it within an hour of signing up.
+            </h2>
+            <img
+              class="testimonial-img"
+              src="images/lady-img.jpg"
+              alt="lady-profile"
+            />
+            <em>Beverly, Illinois</em>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#testimonial-carousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#testimonial-carousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Press -->
+
+    <section id="press" class="colored-section">
+      <img class="press-logo" src="images/techcrunch.png" alt="tc-logo" />
+      <img class="press-logo" src="images/tnw.png" alt="tnw-logo" />
+      <img
+        class="press-logo"
+        src="images/bizinsider.png"
+        alt="biz-insider-logo"
+      />
+      <img class="press-logo" src="images/mashable.png" alt="mashable-logo" />
+    </section>
+
+    <!-- Pricing -->
+
+    <section id="pricing" class="white-section">
+      <h2 class="section-heading">A Plan for Every Detective's Needs</h2>
+      <p>Simple and affordable price plans.</p>
+      <div class="row">
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Sleuth</h4>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text card-title pricing-card-title">Free</h2>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>5 searches per day</li>
+                <li>10 messages per day</li>
+                <li>Unlimited App Usage</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-dark">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Spy</h4>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text card-title pricing-card-title">
+                $49 <small class="text-muted">/ mo</small>
+              </h2>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Unlimited Searches</li>
+                <li>Unlimited Messages</li>
+                <li>Unlimited App Usage</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-dark">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-column col-lg-4">
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Sherlock</h4>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text card-title pricing-card-title">
+                $99 <small class="text-muted">/ mo</small>
+              </h2>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Priority Listing</li>
+                <li>Unlimited Searches</li>
+                <li>Unlimited Messages</li>
+                <li>Unlimited App Usage</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-dark">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+
+    <section id="cta" class="colored-section">
+      <div class="container-fluid">
+        <h3 class="big-heading">
+          Lost something important to you? Find it now.
+        </h3>
+        <button type="button" class="download-button btn btn-lg btn-dark">
+          <i class="fab fa-apple"></i> Download
+        </button>
+        <button type="button" class="download-button btn btn-lg btn-light">
+          <i class="fab fa-google-play"></i> Download
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer" class="white-section">
+      <i class="footer-icon fab fa-twitter"></i>
+      <i class="footer-icon fab fa-facebook"></i>
+      <i class="footer-icon fab fa-instagram"></i>
+      <i class="footer-icon fas fa-envelope"></i>
+      <p class="footer-text">© Copyright 2020 findme</p>
+      Icons made by
+      <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons"
+        >Flat Icons</a
+      >
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    </footer>
+  </body>
+</html>
